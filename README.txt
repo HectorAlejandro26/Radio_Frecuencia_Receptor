@@ -26,11 +26,9 @@ Compilacion:
     
     ".\.venv\Scripts\activate.ps1" -> Para entrar el entorno virtual del proyecto.
     "auto-py-to-exe" -> Para abrir la interfaz grafica del compilador.
+    "pyinstaller --noconfirm --onefile --console main.py" -> Para iniciar la compilacion
 
-    En la interfaz del compilador, en el apartado "Settings", seleccionar la opcion
-    "import config from JSON file" y proporcionar el archivo json de este directorio,
-    despues seleccionar "Convert .py to .exe" y esperar a que termine de compilar.
-
-    Finalmente el archivo "main.exe" que estara dentro de la carpeta "output",
+    Finalmente el archivo "main.exe" que estara dentro de la carpeta "dist",
     moverlo a la carpeta principal del programa "Radio_Frecuencia_Receptor", despues puede
-    eleminar la carpeta "output" ya que no es necesaria.
+    eleminar las carpetas "dist" y "build" y tambien el archivo "main.spec" ya que no son
+    necesarios.
