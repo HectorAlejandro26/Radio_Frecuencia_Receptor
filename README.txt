@@ -25,10 +25,14 @@ Compilacion:
     En una terminal ubicada en este directiorio, se ejecutaran los siguientes comandos:
     
     ".\.venv\Scripts\activate.ps1" -> Para entrar el entorno virtual del proyecto.
-    "auto-py-to-exe" -> Para abrir la interfaz grafica del compilador.
     "pyinstaller --noconfirm --onefile --console main.py" -> Para iniciar la compilacion
 
     Finalmente el archivo "main.exe" que estara dentro de la carpeta "dist",
     moverlo a la carpeta principal del programa "Radio_Frecuencia_Receptor", despues puede
     eleminar las carpetas "dist" y "build" y tambien el archivo "main.spec" ya que no son
     necesarios.
+
+Uso de librerias:
+    openpyxl -> Para manejo de archivos de excel
+    pyserial -> Para capturar entradas por comunicacion serial
+    auto-py-to-exe -> Para la compilacion del programa
